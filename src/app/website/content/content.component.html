@@ -1,0 +1,36 @@
+<mat-card>
+    <!-- <mat-card-header> -->
+      <!-- <div mat-card-avatar class="senaVideo"></div> -->
+      <mat-card-title>Bienvenido</mat-card-title>
+      <div></div>
+      <mat-card-subtitle>Presione el botón de inicio para grabar la frase que de desea traducir</mat-card-subtitle>
+    <!-- </mat-card-header> -->
+    
+    <mat-card-actions>
+      <button mat-raised-button (click)="startRecording()">Inicio grabación</button>
+      <button mat-raised-button (click)="stopRecording()">Fin grabación</button>
+    </mat-card-actions>
+</mat-card>
+
+<!-- <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon> -->
+<div class="Cards">
+
+<mat-card class="Card">
+  <mat-card-header>
+    <mat-card-title>Usted dijo:</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      {{frase}}
+    </p>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="Card">
+  <mat-card-header>
+    <mat-card-title>La seña correspondiente es:</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src] = "path" alt="Video">
+</mat-card>
+
+</div>

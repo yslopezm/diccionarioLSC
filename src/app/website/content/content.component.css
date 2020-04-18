@@ -1,0 +1,23 @@
+.Card {
+    max-width: 200px;
+    /* align-content: center; */
+    margin: auto;
+}
+
+a{
+    display: none;
+}
+
+.Card{
+    padding: 2%;
+}
+
+
+.Cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    align-content: space-between; 
+}
