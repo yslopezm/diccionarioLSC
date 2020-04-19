@@ -18,6 +18,7 @@ export class ContentComponent implements OnInit {
   nameAudio:string = "FraseGrabada.mp3";
   frase:string = "LA persona dijó: ...... ";
   path:string = "https://transmediacatalonia.uab.cat/signem/img/aA.jpg";
+  flagRecording:boolean;
   
 	constructor(private cd: ChangeDetectorRef, private dom: DomSanitizer) {}
 
@@ -62,13 +63,15 @@ export class ContentComponent implements OnInit {
   startRecording() {
 		this.mediaRecorder.start();
 		console.log(this.mediaRecorder.state);
-		console.log('recorder started');
+    console.log('recorder started');
+    this.flagRecording=true;
 	}
   
   stopRecording() {
 		this.mediaRecorder.stop();
 		console.log(this.mediaRecorder.state);
-		console.log('recorder stopped');
+    console.log('recorder stopped');
+    this.flagRecording=false;
   }
   
   getDevices(){

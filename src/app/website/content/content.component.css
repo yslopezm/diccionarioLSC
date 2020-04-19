@@ -1,6 +1,6 @@
 .Card {
-    max-width: 200px;
-    /* align-content: center; */
+    max-width: 250px;
+    height: 270px;
     margin: auto;
 }
 
@@ -12,7 +12,6 @@ a{
     padding: 2%;
 }
 
-
 .Cards{
     display: flex;
     flex-wrap: wrap;
@@ -20,4 +19,10 @@ a{
     align-items: center;
     padding: 2%;
     align-content: space-between; 
+    overflow: hidden;
 }
+
+.Card img{
+    width: 100%;
+    height: auto;
+  }
