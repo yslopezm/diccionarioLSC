@@ -1,8 +1,3 @@
-.Card {
-    max-width: 250px;
-    height: 270px;
-    margin: auto;
-}
 
 a{
     display: none;
@@ -10,6 +5,9 @@ a{
 
 .Card{
     padding: 2%;
+    max-width: 250px;
+    height: 270px;
+    margin: auto;
 }
 
 .Cards{
